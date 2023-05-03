@@ -1,1 +1,8 @@
-# Dining_Philosophers_Problem_Using_Semaphore
+# Dining Philosophers Problem Using Semaphore
+
+The Dining Philosophers problem is a classic computer science problem that illustrates synchronization issues and deadlocks in concurrent programming. The problem involves a group of philosophers who share a circular table and chopsticks. Each philosopher spends his time thinking and eating. To eat, a philosopher must pick up the two chopsticks adjacent to him. However, there are only as many chopsticks as there are philosophers, and each chopstick can only be held by one philosopher at a time. Thus, the philosophers must coordinate with each other to avoid deadlock and ensure that each of them gets a chance to eat.
+
+This project consists of implementing the Dining Philosophers Problem using semaphores in C. The Dining Philosophers Problem is a classic example of a concurrency problem, where multiple philosophers sit around a circular table, each with a bowl of rice and chopsticks. The philosophers must alternately think and eat, but can only eat if they have both chopsticks. The challenge is to design a solution that avoids deadlock and starvation.
+
+The program creates a fixed number of philosopher threads, each with a unique ID, and a corresponding fork thread for each philosopher. The forks are represented as binary semaphores, where 1 means the fork is available and 0 means the fork is being used by a philosopher. The philosophers must request and release forks in a way that avoids deadlock and starvation. The program also implement proper synchronization and locking mechanisms using semaphores to ensure mutual exclusion and prevent race conditions.
+
